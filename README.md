@@ -1,12 +1,13 @@
 # angular-seed-project
-A seed project using Nebular framework in Angular 5.
+A starter Angular 5 frontend template using ng-bootstrap(a native Angular implementation of Bootstrap 4, with no jQuery usage) and Nebular framework. 
 
-#### Technology:
+## Technology:
 
-* Angular 5
-* Bootstrap 4
+* [Angular](https://angular.io)
+* [ng-bootstrap](https://ng-bootstrap.github.io)
+* [Nebular](https://akveo.github.io/nebular/#/docs/getting-started/what-is-nebular)
 
-#### How to run?
+## How to run?
 
 1. Clone the repo.
 2. npm install
