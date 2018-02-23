@@ -1,5 +1,6 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 
@@ -14,7 +15,9 @@ import {
   NbTabsetModule,
   NbThemeModule,
   NbUserModule,
-  NbCheckboxModule
+  NbCheckboxModule,
+  NbPopoverModule,
+  NbContextMenuModule,
 } from '@nebular/theme';
 
 import {
@@ -41,6 +44,8 @@ const NB_MODULES = [
   NbSearchModule,
   NbSidebarModule,
   NbCheckboxModule,
+  NbContextMenuModule,
+  NbPopoverModule,
   NgbModule,
   Ng2SmartTableModule
 ];
