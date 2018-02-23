@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import { NbMenuService, NbSidebarService } from '@nebular/theme';
+import { NbMenuBag } from '@nebular/theme/components/menu/menu.service';
 
 @Component({
   selector: 'ngx-header',
@@ -19,6 +20,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.userMenu = [{ title: 'Logout' }];
+    this.onMenuItemClick();
   }
 
   toggleSidebar(): boolean {
@@ -30,9 +32,11 @@ export class HeaderComponent implements OnInit {
     this.menuService.navigateHome();
   }
 
-  onMenuClick(event) {
-    if (event.title === 'Logout') {
-      // Think about what to do ;)
-    }
+  onMenuItemClick() {
+    this.menuService.onItemClick().subscribe((bag: NbMenuBag) => {
+      if (bag.item.title === 'Logout') {
+        //Think about what to do ;)
+      }
+    });
   }
 }
