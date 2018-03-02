@@ -6,5 +6,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Items',
     icon: 'fa fa-shopping-basket',
     link: '/dashboard/items'
+  },{
+    title: 'Store',
+    icon: 'nb-bar-chart',
+    link: '/dashboard/store'
   }
 ];

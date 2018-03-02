@@ -13,6 +13,10 @@ const routes: Routes = [
         loadChildren: './items/items.module#ItemsModule'
       },
       {
+       path: 'store',
+        loadChildren: './store/store.module#StoreModule'
+      },
+      {
         path: '',
         redirectTo: 'items',
         pathMatch: 'full'
